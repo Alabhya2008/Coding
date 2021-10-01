@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lesson 32</title>
+</head>
+<body style="background-image: url(https://th.bing.com/th/id/R.7d4e3f8bc5ff663d4df382555424b70a?rik=nH1sWNddhYGN7w&pid=ImgRaw&r=0); background-repeat: no-repeat; background-size: cover;">
+
+<fieldset style="width: 100px; background-color: yellow; font-size:25px;"><form> 
+	Fullname:<input type="text" placeholder="Enter your fullname" id="fullname"><br>
+	School name:<input type="text"placeholder="Enter your school name" id="schoolname"><br>
+	Age:<input type="text" placeholder="Enter your age" id="age">
+	Address:<textarea placeholder="Enter your address" id="address"></textarea>
+	Favourite sport: 
+	<select id="favouritesport">
+	<option>What is your favourite sport?</option>
+	<option>Netbal</option>
+	<option>Hockey</option>
+	<option>Basketball</option>
+	<option>Swimming</option>
+	</select>
+
+	<button onclick="form_results('fullname','schoolname','age','address','favouritesport')"> Your results </button>
+</form></fieldset>
+<script> 
+	function form_results(fullname,schoolname,age,address,favouritesport) {
+		alert("Hi " +document.getElementById("fullname").value +". Your school name is " +document.getElementById("schoolname").value +". You are "+document.getElementById("age").value +". Your address is " +document.getElementById("address").value +", and your favourite sport is " +document.getElementById("favouritesport").value);
+		
+	}
+</script>
+
+
+<!-- Create a form with inputs like fullname, school name, age, address, favourite sport, and a button. When you click on the button, it will display all the textbox's words in a div tag. Make it look beautiful. -->
+</body>
+</html>

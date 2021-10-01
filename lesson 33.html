@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lesson 33</title>
+</head>
+<body>
+	<button onclick="show_object()"> Employee details </button>
+	<button onclick="show_car()">Car details</button>
+	<button onclick="todays_date()"> The date</button>
+	<div id="todays_date"></div>
+	<script type="text/javascript">
+		function show_object(){
+			const emp={
+				id: 1,
+				name: "Alabhya",
+				salary: 30000
+			};
+			alert("Employee Id: " +emp.id +"\n Employee name: " +emp.name +"\n Employee salary: " +emp.salary );
+		}
+		function show_car(){
+			const car={
+				id: 2,
+				name: "McLaran", 
+				model: "M300",
+				fullname: function(){
+					return this.name+" "+this.model;
+				}
+				
+			};alert(car.fullname());
+		}
+		function todays_date(){
+			var today=new Date();
+			document.getElementById("todays_date").innerHTML="Todays dag is "+ today+ "  Todays date is" +today.getDate() +today.getMonth() +today.getDay() +today.getFullYear() +today.getHours() +today.getMinutes() +today.getSeconds() ;
+		}
+	</script>
+
+</body>
+</html>
