@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lesson 34</title>
+</head>
+<body>
+	<button onclick="click_me();"> Click Me </button>
+	<form>
+		First Number<input type="text" id="a"><br>
+		Second Number<input type="text" id="b"><br>
+		<input type="submit" onclick="small_number();">
+	</form>
+	<form> 
+		Age<input type="text" id="c"><br>
+		<input type="submit" onclick="vote();" value="vote">
+
+	</form>
+
+	<script type="text/javascript">
+		function vote(){
+			if(document.getElementById("c").value<18){
+				alert("you cannot vote");
+			}else{
+				alert("you can vote");
+			}
+		}
+		function small_number() {
+			if(document.getElementById("a").value<document.getElementById("b").value){
+				alert("The smaller number is: " +document.getElementById("a").value);
+			}else{
+				alert("The small number is: " +document.getElementById("b").value);
+			}
+		}
+		function click_me(){
+			var a=15;
+			var b=130;
+		if(a>b){
+			alert("The greater no. is: " +a);
+		}else{
+			alert("The greater no. is: " +b);
+		}
+		}
+
+	</script>
+<!--Create a form, take one number type input.Check whether the number is odd or even. Create a form take one number type input. Check whether it is a positive or negative number.note: how to write reminder part:use '%' for first homework  -->
+</body>
+</html>
