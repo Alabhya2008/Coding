@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lesson 34 Homework</title>
+</head>
+<body style="background-color: limegreen;">
+	<form>
+		<h1>Positive & Negative Number</h1>
+		Number <input type="text" id="c"><br>
+		<br>
+		<input type="submit" onclick="N_P_numbers();" value="Find answer">
+	</form>
+	<form>
+		<h1> Odd and Even Number </h1>
+		Number <input type="text" id="a"><br>
+		<br>
+		<input type="submit" onclick="O_E_numbers();" value="Find answer">
+	</form>
+	<script type="text/javascript">
+		function N_P_numbers(){
+			if(document.getElementById("c").value <0){
+				alert("This is a negative number");
+			}else{
+				alert("This is a positive number");
+			}
+		}
+			function O_E_numbers(){
+			if(document.getElementById("a").value %2==0){
+				alert("it is a even number")
+			}else{
+				alert("This is a odd number")
+			}
+		}
+	</script>
+</body>
+</html>

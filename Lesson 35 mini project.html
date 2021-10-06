@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 35 Mini Project</title>
+</head>
+<body style="background-color:palevioletred;">
+<fieldset style="background-image: url(https://4.bp.blogspot.com/-KKRpOOVKCPk/UCvGfehL1XI/AAAAAAAAHZY/53h7NaN2UI4/s1600/Galaxy+Wallpapers+9.jpg); background-repeat: no-repeat; background-size:cover; width:300px; color:white;">
+	<form>
+		<div>
+		First Name:<br><input type="text" placeholder="Enter your first name" required="required"/>
+		</div><br>
+		<div>
+		Last name:<br><input type="text" placeholder="Enter your last name"  required="required"/>
+		</div><br>
+		<div>
+		Email:<br><input type="text" placeholder="Enter your email"  required="required"/>
+		</div><br>
+		<div>
+		User ID:<br><input type="text" placeholder="Enter your user ID"  required="required"/>
+		</div><br>
+		<div>
+		Password:<br><input type="password" placeholder="Enter your password" id="a" required="required"/>
+		</div><br>
+		<div>
+		Confirm password:<br><input type="password" placeholder="Confirm your password" id="b" required="required"/><br>
+	</div>
+	<br>
+		<input type="submit" onclick="confirmation_of_password()"/>
+	</form>
+</fieldset>
+	<script type="text/javascript">
+		function confirmation_of_password(){
+			if(document.getElementById("a").value == document.getElementById("b").value){
+						alert("Congratulations! You have successfully created a profile.")	
+			}else{
+					alert("You have entered the wrong password!")
+			}
+		}
+	</script>
+
+</body>
+</html>
